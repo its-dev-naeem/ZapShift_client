@@ -8,6 +8,7 @@ import Register from "../pages/Auth/Register/Register";
 import Forget from "../pages/Auth/Forget/Forget";
 import Rider from "../pages/Rider/Rider";
 import PrivateRoute from "./PrivateRoute";
+import SendParcel from "../pages/SendParcel/SendParcel";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ export const router = createBrowserRouter([
       {
         path: "/rider",
         element: <PrivateRoute><Rider /></PrivateRoute>,
-      }
+      },
+      {
+        path: "/send-parcel",
+        element: <PrivateRoute><SendParcel /></PrivateRoute>,
+      },
     ],
   },
   {
